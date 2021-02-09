@@ -1,5 +1,5 @@
 # Kyocera-Scan-Setup
-This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-kyocera-scanning) script. This script differs in that it allows the end-user or tech more control over the new local user's name and "scan to" folder name. ADC's standard user "Zscan" will still be the default user that the script will initially look for and create upon non-existent, however, this static variable can easily be modified or set in the script itself. 
+This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-kyocera-scanning) script. This script differs in that it allows the end-user or tech more control over the new local user's name and the "scan to" folder name. ADC's standard user "Zscan" will still be the default user that the script will initially look for and create upon non-existent. However, this static variable can be easily modified or set in the script itself. This script, like the other one, was R&D solely on my free-time, outside of work hours, as a way to learn PowerShell and solve a real world problem at the same time. 
 
 <b>Please note:</b> this script assumes that SMB ver. 2+ is not disabled. For devices requiring SMB ver. 1, you must manually enable it as it comes disabled with Windows by default. This script requires elevated permission. The end-user must have admin priviledges or obtain it.
 </br>
