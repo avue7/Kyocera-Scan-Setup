@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "SCAN_SETUP_PROMPT_4_PASSWORD.ps1"
