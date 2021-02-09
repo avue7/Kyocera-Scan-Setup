@@ -1,5 +1,5 @@
 # Kyocera-Scan-Setup
-This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-kyocera-scanning) script. This script differs in that it allows the end-user or tech more control over the new local user's name and the "scan to" folder name. ADC's standard user "Zscan" will still be the default user that the script will initially look for and create upon non-existent. However, this static variable can be easily modified or set in the script itself. This script, like the other one, was R&D solely on my free-time, outside of work hours, as a way to learn PowerShell and solve a real world problem at the same time. 
+This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-kyocera-scanning) script. This script differs in that it allows the end-user or tech more control over the new local user's name and the "scan to" folder name. ADC's standard user "Zscan" will still be the default user that the script will initially look for and create upon non-existent. However, this static variable can be easily modified or set in the script itself. This script, like the other one, was R&D solely on my free-time, outside of work hours, as a way to learn PowerShell while providing insights to a resolution for a problem that I face daily at work. 
 
 <b>Please note:</b> this script assumes that SMB ver. 2+ is not disabled. For devices requiring SMB ver. 1, you must manually enable it as it comes disabled with Windows by default. This script requires elevated permission. The end-user must have admin priviledges or obtain it.
 </br>
@@ -7,8 +7,10 @@ This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-
 <b>**ADC techs, please note that the Kyocera printers with 0 series uses SMB ver. 1 for scanning purposes.</b>
 
 ## What Does It Do:
-1. Creates a local user on client's computer called "Zscan" (please note: this value is static and can be changed under global variable <$NewUser> in the script). End-users must set a password in the initial setup. Password will be converted to a secure string. <img align="center" src="1.JPG" width="800" /></br></br>
-<b>**ADC Techs, please ensure you use the uniform scan password unless the customer specifies otherwise.</b>
+1. Creates a local user on client's computer called "Zscan" (please note: this value is static and can be changed under global variable <$NewUser> in the script). If "Zscan" user already exists, you are given the option to either (a) create a new user other than Zscan, (b) delete the "Zscan" account and create a new user, (c) delete and recreate Zscan (for troubleshooting purposes), or (d) move on to the "scan to" folder options. <img align="center" src="1.JPG" width="800" /><img align="center" src="1.1.JPG" width="800" /></br></br>
+<b>**ADC Techs, please ensure you use the uniform scan password for the particular customer, unless the customer specifies otherwise. "Zscan" is our traditional user. If this account is not there, verify in the address book entry that they are not using another scanner account before proceeding. When in doubt, ask the customer.</b>
+
+a. Creates new local user other than "Zscan".
 
 2. Once the local user "Zscan" is successfully created, the script will make sure "Zscan's" password never expires and cannot be changed. The account will also never expire. <img align="center" src="2.JPG" width="800" />
 
