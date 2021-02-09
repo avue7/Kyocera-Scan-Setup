@@ -9,8 +9,7 @@ This is an extension of the [fix-kyocera-scanning](https://github.com/avue7/fix-
 ## What Does It Do:
 1. Creates a local user on client's computer called "Zscan" (please note: this value is static and can be changed under global variable <$NewUser> in the script). If "Zscan" user already exists, you are given the option to either (a) create a new user other than Zscan, (b) delete the "Zscan" account and create a new user, (c) delete and recreate Zscan (for troubleshooting purposes), or (d) move on to the "scan to" folder options. <img align="center" src="1.JPG" width="800" /><img align="center" src="1.1.JPG" width="800" /></br></br>
 <b>**ADC Techs, please ensure you use the uniform scan password for the particular customer, unless the customer specifies otherwise. "Zscan" is our traditional user. If this account is not there, verify in the address book entry that they are not using another scanner account before proceeding. When in doubt, ask the customer.</b>
-
-a. Creates new local user other than "Zscan".
+  a. Creates new local user other than "Zscan".
 
 2. Once the local user "Zscan" is successfully created, the script will make sure "Zscan's" password never expires and cannot be changed. The account will also never expire. <img align="center" src="2.JPG" width="800" />
 
