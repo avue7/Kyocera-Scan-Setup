@@ -16,14 +16,14 @@ d) Move on to "scan to" folder options. <img align="center" src="1d.JPG" width="
 
 2. Once the new local user account is created is successfully created, the script will make sure that the new account's password never expires and cannot be changed. The account will also never expire. <img align="center" src="2.JPG" width="800" />
 
-3. Checks to see if Scans folder exist in root C drive. If not found, creates one and sets folder as a shared folder. If found, outputs error for "Scans" folder creation and displays the number of items in the folder. You now have options to (a) create a new folder and customize name, (b) for troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move the files back to the "Scans" folder, and (c) simply continue to "Scans" folder permission. <img align="center" src="3.JPG" width="800" /></br></br>
+3. Checks to see if Scans folder exist in root C drive. If not found, creates one and sets folder as a shared folder. If found, outputs error for "Scans" folder creation and displays the number of items in the folder. You now have options to (a) create a new folder and customize name, (b) for troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move the files back to the "Scans" folder, or (c) simply continue to "Scans" folder permission. <img align="center" src="3.JPG" width="800" /></br></br>
 a) Create a new folder with custom name. <img align="center" src="3a.JPG" width="800" /></br></br>
-b) For troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move files back to the "Scans" folder. <img align="center" src="3.JPG" width="800" /></br></br>
-c) Continue to "Scans" folder permission. <img align="center" src="3.JPG" width="800" /></br></br>
+b) For troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move files back to the "Scans" folder. <img align="center" src="3b.JPG" width="800" /></br></br>
+c) Continue to "Scans" folder permission.
 
-4. Sets the permission for the Zscan user and adds the ACL rules for the Scans folder. If Scans folder already exists it will re-attempt to add the correct permissions for the Zscan user. <img align="center" src="4.JPG" width="800" />
+4. Sets the permission for the new local user and adds the ACL rules for the "Scans" folder. If "Scans" folder already exists it will re-attempt to add the correct permissions for the new local user. <img align="center" src="4.JPG" width="800" />
 
-5. Adds the shortcut of the Scans folder to the desktop and pins the Scans folder to the Quick Access toolbar. <img align="center" src="5.JPG" width="800" /></br></br>
+5. Adds the shortcut of the "Scans" folder to the desktop and pins the "Scans" folder to the Quick Access toolbar. <img align="center" src="5.JPG" width="800" /></br></br>
 <b>**ADC Techs, if you set this portion manually, please ensure this option is added for our clients - most clients use this and finds it an important feature.</b>
 
 6. Grabs the current network profile. If current network profile is "Domain", then enable "File and Printer Sharing" at firewall for domain and private network profiles. Also, turn on network discovery for domain and private network profiles. If current network profile is "Private", then do the same for only private network profiles. Else if current network profile is "Public", switch the current network profile to "Private" and enable the correct firewall settings. As a security measure, file and printer sharing, along with network discovery, should not be turned on for the public network profile. <img align="center" src="6.JPG" width="800" /></br></br>
@@ -33,7 +33,7 @@ c) Continue to "Scans" folder permission. <img align="center" src="3.JPG" width=
 <b>**ADC Techs, please try using the hostname first as IP addresses may change more often; use IP if reserved.</b>
 
 ## How To Use:
-1. Download both files: RUN_ME.bat file and SCAN_QUICK_FIX.ps1 into the same directory.
+1. Download both files: RUN_ME.bat file and SCAN_SETUP_PROMPT_4_PASSWORD.ps1 into the same directory.
 2. Double-click the RUN_ME.bat file. 
 3. PowerShell script should run, follow thru. 
 
