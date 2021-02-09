@@ -14,9 +14,12 @@ c) Delete and recreate Zscan for troubleshooting purposes. <img align="center" s
 d) Move on to "scan to" folder options. <img align="center" src="1d.JPG" width="800" /></br></br>
 <b>**ADC Techs, please ensure you use the uniform scan password for the particular customer, unless the customer specifies otherwise. "Zscan" is our traditional user. If this account is not there, verify in the address book entry that they are not using another scanner account before proceeding. When in doubt, ask the customer.</b>
 
-2. Once the local user "Zscan" is successfully created, the script will make sure "Zscan's" password never expires and cannot be changed. The account will also never expire. <img align="center" src="2.JPG" width="800" />
+2. Once the new local user account is created is successfully created, the script will make sure that the new account's password never expires and cannot be changed. The account will also never expire. <img align="center" src="2.JPG" width="800" />
 
-3. Checks to see if Scans folder exist in root C drive. If not found, creates one and sets folder as a shared folder. If found, outputs error for "Scans" folder creation and displays the number of items in the folder. <img align="center" src="3.JPG" width="800" />
+3. Checks to see if Scans folder exist in root C drive. If not found, creates one and sets folder as a shared folder. If found, outputs error for "Scans" folder creation and displays the number of items in the folder. You now have options to (a) create a new folder and customize name, (b) for troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move the files back to the "Scans" folder, and (c) simply continue to "Scans" folder permission. <img align="center" src="3.JPG" width="800" /></br></br>
+a) Create a new folder with custom name. <img align="center" src="3a.JPG" width="800" /></br></br>
+b) For troubleshooting purposes: move files from "Scans" folder to a temp folder, delete the folder, recreate the "Scans" folder, and move files back to the "Scans" folder. <img align="center" src="3.JPG" width="800" /></br></br>
+c) Continue to "Scans" folder permission. <img align="center" src="3.JPG" width="800" /></br></br>
 
 4. Sets the permission for the Zscan user and adds the ACL rules for the Scans folder. If Scans folder already exists it will re-attempt to add the correct permissions for the Zscan user. <img align="center" src="4.JPG" width="800" />
 
